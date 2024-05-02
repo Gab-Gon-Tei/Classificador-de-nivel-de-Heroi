@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classificador de nível de Herói", "Classificador de nível de Herói.csproj", "{1AA5BB40-BE86-490A-8B4F-75946A7A81EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AA5BB40-BE86-490A-8B4F-75946A7A81EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA5BB40-BE86-490A-8B4F-75946A7A81EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA5BB40-BE86-490A-8B4F-75946A7A81EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA5BB40-BE86-490A-8B4F-75946A7A81EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42055F4C-012C-40E4-A873-995FFAF952D9}
+	EndGlobalSection
+EndGlobal
