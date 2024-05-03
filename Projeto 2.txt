@@ -1,0 +1,74 @@
+// Utilização de estrutura de objetos.
+using Classificador_de_nível_de_Herói.Objetos;
+
+//Boas vindas ao usuário, acrescentando a característica "Nome" ao Objeto "Herói"
+Console.WriteLine("Olá, Herói! Bem vindos ao seu Classificador de nível!");
+Console.WriteLine("Primeiramente, digite o nome do seu personagem:");
+
+var herói = new Herói();
+herói.Nome = Console.ReadLine();
+
+Console.WriteLine($"Bem vindo, {herói.Nome}!");
+
+// Inserção de valor int para level do herói. Estrutura de repetição garantindo uma entrada válida. 
+bool validação = false;
+while (!validação)
+{
+    Console.WriteLine("Agora, me informe o lvl atual do seu personagem:");
+    string level = Console.ReadLine();
+
+    if (level == "")
+    {
+        Console.WriteLine("Digite um valor numérico");
+    } 
+    else if (int.TryParse(level, out int lvlconv))
+    {
+    herói.XP = lvlconv; 
+    validação=true;
+    }
+    else
+    {
+        Console.WriteLine("Digite um valor numérico válido");
+    }
+}
+
+//Algoritmo de classificação do herói pelo Level
+if (herói.XP <= 1000)
+{
+    herói.Nível = "Ferro";
+}
+ if (herói.XP >= 1001) 
+{
+    herói.Nível = "Bronze";
+}
+ if (herói.XP >= 2001)
+{
+    herói.Nível = "Prata";
+}
+ if (herói.XP >= 5001)
+{
+    herói.Nível = "Ouro";
+}
+ if (herói.XP >= 7001)
+{
+    herói.Nível = "Platina";
+}
+ if (herói.XP >= 8001)
+{
+    herói.Nível = "Ascendente";
+}
+ if (herói.XP >= 9001)
+{
+    herói.Nível = "Imortal";
+}
+  if (herói.XP >= 10001)
+{
+    herói.Nível = "Radiante";
+};
+
+Console.WriteLine($"Certo. Você tem {herói.XP}XP. Você está fazendo progresso!");
+Console.WriteLine();
+Console.WriteLine($"O Herói de nome {herói.Nome} está no nível de {herói.Nível}");
+
+// Ferramenta para não fechar o terminal após a conclusão do processamento.
+Console.ReadLine();
